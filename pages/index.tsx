@@ -12,7 +12,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <img src="black.jpeg" alt="asdf" />
         <h1>Ahoj</h1>
         <a>asdfasdf</a>
         <p>sdafasdfasdfasdfasdf</p>

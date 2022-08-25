@@ -1,5 +1,6 @@
 import { css, Global } from '@emotion/react';
 import Head from 'next/head';
+import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -11,7 +12,7 @@ function MyApp({ Component, pageProps }) {
         styles={css`
           html,
           body {
-            background-color: red;
+            background-color: white;
             padding: 0;
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -20,8 +21,7 @@ function MyApp({ Component, pageProps }) {
           }
 
           h1 {
-            color: white;
-            background-color: blue;
+            color: black;
           }
 
           a {
@@ -39,12 +39,14 @@ function MyApp({ Component, pageProps }) {
             }
             body {
               color: white;
-              background: black;
+              background: white;
             }
           }
         `}
       />
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }
